@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="container">
+    <header class="payslip__header ">
+      <div class="brand__details">
+        <img src="/code-crave-logo.jpeg" alt="brand logo" class="brand__logo">
+        <div class="brand__name">
+          <h1 class="brand__title">Code Crave Solutions</h1>
+          <p class="brand__address description">No, 1E, Gee Gee Emerald Towers, Valluvar Kottam Main Road,Chennai-600034 India</p>
+        </div>
+      </div>
+      <div class="payslip__details">
+        <p class="description">Payslip For the Month</p>
+        <h3 class="payslip__data" contenteditable="true">March 2024</h3>
+      </div>
+    </header>
+    <hr>
+
+    <section class="employee__summary__section">
+      <div class="emplyee__details">
+        <h2 class="title">Emplyee summary</h2>
+
+        <table class="emplyee_data_datas">
+          <tbody>
+            <tr>
+              <td>Employee Name</td>
+              <td>:</td>
+              <td><input type="text" name="emaplyeeName" id="emaplyeeName" value="Vignesh Magudeewaran"></td>
+            </tr>
+
+            <tr>
+              <td>Employee ID</td>
+              <td>:</td>
+              <td><input type="number" name="empyeeId" id="empyeeId" value="2024004"></td>
+            </tr>
+            
+            <tr>
+              <td>Pay Period</td>
+              <td>:</td>
+              <td><input type="month" name="PaYData" id="PaYData" value="March 2024"></td>
+            </tr>
+
+            <tr>
+              <td>Pay Data</td>
+              <td>:</td>
+              <td><input type="date" name="PayData" id="PayData"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="emplyee__salary__details">
+        <div class="salary__card">
+          <h1 class="salary" contenteditable="true">₹ 50,000,00</h1>
+          <span>Emplyee Net Pay</span>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="emplyee_active_hours">
+          <table>
+            <tbody>
+              <tr>
+                <td>Paid Days</td>
+                <td>:</td>
+                <td contenteditable="true">31</td>
+              </tr>
+              <tr>
+                <td>LOP Days</td>
+                <td>:</td>
+                <td contenteditable="true">0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <div id="demo__amount"></div>
+
+
+    <section class="final_payslip_details">
+
+      <div class="final__payslip__container">
+        <div class="earning_table table__box">
+          <div class="line"></div>
+  
+          <table>
+            <thead>
+              <tr>
+                <th>EARNINGS</th>
+                <th>AMOUNT</th>
+              </tr>
+            </thead>
+  
+            <tbody>
+              <tr>
+                <td>Basic</td>
+                <td contenteditable="true">₹0.00</td>
+              </tr>
+              <tr>
+                <td>House Rent Allowance</td>
+                <td contenteditable="true">₹0.00</td>
+              </tr>
+              <tr>
+                <td>Medical Allowance</td>
+                <td contenteditable="true">₹0.00</td>
+              </tr>
+              <tr>
+                <!-- <td>Gross Earnings</td>
+                <td>₹50,000.00</td>
+              </tr> -->
+  
+            </tbody>
+          </table>
+        </div>
+  
+  
+        <div class="deducation_table table__box">
+          <div class="line"></div>
+  
+          <table>
+            <thead>
+              <tr>
+                <th>DEDUCTIONS</th>
+                <th>AMOUNT</th>
+              </tr>
+            </thead>
+  
+            <tbody>
+              <tr>
+                <td>Income Tax</td>
+                <td contenteditable="true">₹0.00</td>
+              </tr>
+  
+              <tr>
+                <td>Provident Fund</td>
+                <td contenteditable="true">₹0.00</td>
+              </tr>
+  
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+  
+              <!-- <tr>
+                <td>Total Deductions</td>
+                <td>₹0.00</td>
+              </tr> -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="total__payslipe">
+        <div class="gross_earning">
+          <h2>Gross Earnings</h2>
+          <h2 id="totalSalary" contenteditable="true" >₹50,000.00</h2>
+        </div>
+
+
+        <div class="total__deductions">
+          <h2>Total Deductions</h2>
+          <h2 id="DeductionAmount" contenteditable="true">₹0.00</h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="total__net__pay">
+      <div class="net_pay_title">
+        <div class="details">
+          <h1>TOTAL NET PAYABLE</h1>
+          <p>Gross Earnings - Total Deductions</p>
+        </div>
+      </div>
+      <div class="net_amount">
+        <h1 contenteditable="true">₹50,000.00</h1>
+      </div>
+
+    </section>
+    <section class="amount__words">
+      <p>Amount In Words: <span contenteditable="true">Indian Rupee Fifty Thousand Only</span></p>
+    </section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,322 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 100%;
+  margin: auto;
+}
+
+.line {
+  height: 2px;
+  width: calc(100% - 50px);
+  margin: auto;
+  background: linear-gradient(to right, transparent 50%, #aaaaab 50%);
+  background-size: 12px 2px, 100% 2px;
+}
+
+.payslip__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+}
+.payslip__header .description {
+  font-size: clamp(15px, 3vw, 18px);
+  font-weight: 400;
+  line-height: 1.2;
+}
+.payslip__header .brand__details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-gap: 20px;
+}
+.payslip__header .brand__details .brand__logo {
+  max-width: 120px;
+  width: 100%;
+}
+.payslip__header .brand__details .brand__name {
+  display: block;
+}
+.payslip__header .brand__details .brand__name .brand__title {
+  font-size: clamp(26px, 3vw, 40px);
+  font-weight: 600;
+  line-height: 1;
+  padding-bottom: 5px;
+}
+.payslip__header .payslip__details {
+  text-align: end;
+}
+.payslip__header .payslip__details .payslip__data {
+  font-size: clamp(18px, 4vw, 24px);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.employee__summary__section {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.employee__summary__section .emplyee__details {
+  flex: 1 1 47%;
+}
+.employee__summary__section .emplyee__details .title {
+  font-size: clamp(15px, 4vw, 18px);
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+.employee__summary__section .emplyee__details .emplyee_data_datas tbody tr {
+  display: block;
+  padding: 12px 0;
+  width: 100%;
+}
+.employee__summary__section .emplyee__details .emplyee_data_datas tbody tr td {
+  font-size: clamp(15px, 3vw, 18px);
+  font-size: 500;
+  line-height: 1;
+  color: #000;
+}
+.employee__summary__section .emplyee__details .emplyee_data_datas tbody tr td input {
+  color: #000;
+  font-size: clamp(15px, 3vw, 18px);
+  font-size: 500;
+  line-height: 1;
+  border: none;
+}
+.employee__summary__section .emplyee__details .emplyee_data_datas tbody tr td:nth-child(1) {
+  width: 180px;
+}
+.employee__summary__section .emplyee__details .emplyee_data_datas tbody tr td:nth-child(2) {
+  padding-right: 10px;
+}
+.employee__summary__section .emplyee__salary__details {
+  border-radius: 20px;
+  border: 2px solid #dddddd;
+  flex: 1 1 30%;
+}
+.employee__summary__section .emplyee__salary__details .salary__card {
+  border-radius: 18px 18px 0 0;
+  background-color: #dafada;
+  padding: 35px 30px 35px 55px;
+  position: relative;
+}
+.employee__summary__section .emplyee__salary__details .salary__card::before {
+  content: "";
+  display: block;
+  width: 6px;
+  border-radius: 10px 0 0 10px;
+  height: calc(100% - 65px);
+  background: #0aa631;
+  position: absolute;
+  left: 7%;
+  top: 15%;
+}
+.employee__summary__section .emplyee__salary__details .salary__card .salary {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.3px;
+  padding-bottom: 8px;
+}
+.employee__summary__section .emplyee__salary__details .salary__card span {
+  font-size: clamp(16px, 3vw, 20px);
+  font-weight: 400;
+  color: #206620;
+}
+.employee__summary__section .emplyee__salary__details .emplyee_active_hours {
+  padding: 20px 30px;
+}
+.employee__summary__section .emplyee__salary__details .emplyee_active_hours table tbody tr {
+  display: block;
+  padding: 8px 0;
+}
+.employee__summary__section .emplyee__salary__details .emplyee_active_hours table tbody tr td {
+  font-size: clamp(16px, 3vw, 20px);
+  font-weight: 400;
+}
+.employee__summary__section .emplyee__salary__details .emplyee_active_hours table tbody tr td:nth-child(1) {
+  width: 180px;
+}
+.employee__summary__section .emplyee__salary__details .emplyee_active_hours table tbody tr td:nth-child(3) {
+  padding-left: 10px;
+}
+
+.final_payslip_details {
+  border-radius: 20px;
+  border: 2px solid #dddddd;
+  margin: 40px auto;
+}
+.final_payslip_details .final__payslip__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: flex-start;
+  grid-gap: 50px;
+  padding: 15px 20px;
+  flex-wrap: wrap;
+}
+.final_payslip_details .table__box {
+  flex: 1 1 47%;
+  max-width: 100%;
+  position: relative;
+}
+.final_payslip_details .table__box .line {
+  position: absolute;
+  top: 24%;
+  width: 100%;
+}
+.final_payslip_details .table__box table {
+  width: 100%;
+  border-collapse: collapse;
+  position: relative;
+}
+.final_payslip_details .table__box table thead {
+  height: 50px;
+}
+.final_payslip_details .table__box table thead th {
+  font-size: clamp(15px, 3vw, 18px);
+  font-weight: 600;
+  line-height: 1;
+  text-align: left;
+}
+.final_payslip_details .table__box table thead th:nth-child(2) {
+  text-align: right;
+}
+.final_payslip_details .table__box table tbody tr:last-child td {
+  font-weight: 700;
+}
+.final_payslip_details .table__box table tbody tr td {
+  font-size: clamp(15px, 3vw, 18px);
+  font-weight: 400;
+  padding: 12px 0;
+}
+.final_payslip_details .table__box table tbody tr td:nth-child(2) {
+  text-align: right;
+  font-weight: 700;
+}
+.final_payslip_details .table__box table tbody tr td input {
+  font-size: clamp(15px, 3vw, 18px);
+  font-weight: 600;
+  text-align: end;
+  width: 100%;
+  border: none;
+}
+.final_payslip_details .table__box table tbody tr td input:-moz-placeholder-shown {
+  font-size: clamp(12px, 3vw, 15px);
+  font-weight: 400;
+  color: #eee;
+}
+.final_payslip_details .table__box table tbody tr td input:placeholder-shown {
+  font-size: clamp(12px, 3vw, 15px);
+  font-weight: 400;
+  color: #eee;
+}
+.final_payslip_details .total__payslipe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(228, 228, 228, 0.431372549);
+  padding: 15px 20px;
+  border-radius: 0 0 20px 20px;
+  grid-gap: 50px;
+}
+.final_payslip_details .total__payslipe .gross_earning,
+.final_payslip_details .total__payslipe .total__deductions {
+  flex: 1 1 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.final_payslip_details .total__payslipe .gross_earning h2,
+.final_payslip_details .total__payslipe .total__deductions h2 {
+  font-size: clamp(15px, 3vw, 18px);
+  font-weight: 700;
+}
+.final_payslip_details .total__payslipe .gross_earning #totalSalary,
+.final_payslip_details .total__payslipe .gross_earning #DeductionAmount,
+.final_payslip_details .total__payslipe .total__deductions #totalSalary,
+.final_payslip_details .total__payslipe .total__deductions #DeductionAmount {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 120px;
+  text-align: end;
+}
+
+.total__net__pay {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  border: 2px solid #e2e2e2;
+  margin-bottom: 30px;
+}
+.total__net__pay .net_pay_title .details {
+  padding: 0 20px;
+}
+.total__net__pay .net_pay_title .details h1 {
+  font-size: clamp(16px, 3vw, 20px);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.total__net__pay .net_pay_title .details p {
+  font-size: clamp(15px, 3vw, 18px);
+  font-weight: 400;
+}
+.total__net__pay .net_amount {
+  background: #daffdc;
+  padding: 25px 20px;
+  border-radius: 0 18px 18px 0;
+}
+.total__net__pay .net_amount h1 {
+  font-size: clamp(20px, 3vw, 28px);
+  font-weight: 600;
+}
+
+.amount__words {
+  padding: 30px 15px;
+}
+.amount__words p {
+  font-size: 18px;
+  font-weight: 300;
+  text-align: end;
+}
+.amount__words p span {
+  font-weight: 500;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
