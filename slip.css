@@ -26,7 +26,7 @@
   padding: 20px 10px;
 }
 .payslip__header .description {
-  font-size: clamp(15px, 3vw, 18px);
+  font-size: 18px;
   font-weight: 400;
   line-height: 1.2;
 }
@@ -44,7 +44,7 @@
   display: block;
 }
 .payslip__header .brand__details .brand__name .brand__title {
-  font-size: clamp(26px, 3vw, 40px);
+  font-size: 40px;
   font-weight: 600;
   line-height: 1;
   padding-bottom: 5px;
@@ -53,7 +53,7 @@
   text-align: end;
 }
 .payslip__header .payslip__details .payslip__data {
-  font-size: clamp(18px, 4vw, 24px);
+  font-size: 24px;
   font-weight: 700;
   line-height: 1;
 }
@@ -63,14 +63,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
 }
 .employee__summary__section .emplyee__details {
-  flex: 1 1 47%;
+  flex: 1 1 50%;
 }
 .employee__summary__section .emplyee__details .title {
-  font-size: clamp(15px, 4vw, 18px);
-  font-weight: 600;
+  font-size: 18px;
+  font-size: 600;
   line-height: 1;
   text-transform: uppercase;
   padding: 20px 0;
@@ -81,14 +80,14 @@
   width: 100%;
 }
 .employee__summary__section .emplyee__details .emplyee_data_datas tbody tr td {
-  font-size: clamp(15px, 3vw, 18px);
+  font-size: 18px;
   font-size: 500;
   line-height: 1;
   color: #000;
 }
 .employee__summary__section .emplyee__details .emplyee_data_datas tbody tr td input {
   color: #000;
-  font-size: clamp(15px, 3vw, 18px);
+  font-size: 18px;
   font-size: 500;
   line-height: 1;
   border: none;
@@ -129,7 +128,7 @@
   padding-bottom: 8px;
 }
 .employee__summary__section .emplyee__salary__details .salary__card span {
-  font-size: clamp(16px, 3vw, 20px);
+  font-size: 20px;
   font-weight: 400;
   color: #206620;
 }
@@ -141,7 +140,7 @@
   padding: 8px 0;
 }
 .employee__summary__section .emplyee__salary__details .emplyee_active_hours table tbody tr td {
-  font-size: clamp(16px, 3vw, 20px);
+  font-size: 20px;
   font-weight: 400;
 }
 .employee__summary__section .emplyee__salary__details .emplyee_active_hours table tbody tr td:nth-child(1) {
@@ -163,10 +162,9 @@
   align-items: flex-start;
   grid-gap: 50px;
   padding: 15px 20px;
-  flex-wrap: wrap;
 }
 .final_payslip_details .table__box {
-  flex: 1 1 47%;
+  flex: 1 1 50%;
   max-width: 100%;
   position: relative;
 }
@@ -184,7 +182,7 @@
   height: 50px;
 }
 .final_payslip_details .table__box table thead th {
-  font-size: clamp(15px, 3vw, 18px);
+  font-size: 18px;
   font-weight: 600;
   line-height: 1;
   text-align: left;
@@ -196,7 +194,7 @@
   font-weight: 700;
 }
 .final_payslip_details .table__box table tbody tr td {
-  font-size: clamp(15px, 3vw, 18px);
+  font-size: 18px;
   font-weight: 400;
   padding: 12px 0;
 }
@@ -205,21 +203,11 @@
   font-weight: 700;
 }
 .final_payslip_details .table__box table tbody tr td input {
-  font-size: clamp(15px, 3vw, 18px);
+  font-size: 18px;
   font-weight: 600;
   text-align: end;
   width: 100%;
   border: none;
-}
-.final_payslip_details .table__box table tbody tr td input:-moz-placeholder-shown {
-  font-size: clamp(12px, 3vw, 15px);
-  font-weight: 400;
-  color: #eee;
-}
-.final_payslip_details .table__box table tbody tr td input:placeholder-shown {
-  font-size: clamp(12px, 3vw, 15px);
-  font-weight: 400;
-  color: #eee;
 }
 .final_payslip_details .total__payslipe {
   display: flex;
@@ -239,18 +227,8 @@
 }
 .final_payslip_details .total__payslipe .gross_earning h2,
 .final_payslip_details .total__payslipe .total__deductions h2 {
-  font-size: clamp(15px, 3vw, 18px);
+  font-size: 18px;
   font-weight: 700;
-}
-.final_payslip_details .total__payslipe .gross_earning #totalSalary,
-.final_payslip_details .total__payslipe .gross_earning #DeductionAmount,
-.final_payslip_details .total__payslipe .total__deductions #totalSalary,
-.final_payslip_details .total__payslipe .total__deductions #DeductionAmount {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: 120px;
-  text-align: end;
 }
 
 .total__net__pay {
@@ -265,12 +243,12 @@
   padding: 0 20px;
 }
 .total__net__pay .net_pay_title .details h1 {
-  font-size: clamp(16px, 3vw, 20px);
+  font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
 }
 .total__net__pay .net_pay_title .details p {
-  font-size: clamp(15px, 3vw, 18px);
+  font-size: 18px;
   font-weight: 400;
 }
 .total__net__pay .net_amount {
@@ -279,7 +257,7 @@
   border-radius: 0 18px 18px 0;
 }
 .total__net__pay .net_amount h1 {
-  font-size: clamp(20px, 3vw, 28px);
+  font-size: 28px;
   font-weight: 600;
 }
 
@@ -319,4 +297,4 @@
   .container {
     max-width: 1320px;
   }
-}
+}/*# sourceMappingURL=style.css.map */
